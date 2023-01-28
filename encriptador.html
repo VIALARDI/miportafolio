@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width">
+        <title>Mi Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="imagenes/logo.jpg" alt="alura">
+        </header>
+        <main>
+            <section class="clase1">
+
+                <textarea id="Ingresa" class="Ingresa" cols="30" rows="5" placeholder="Ingrese el texto aqui"></textarea>
+                    
+                <div class="info">
+                    <img src="imagenes/exclamation.png" alt="" height="16px" width="16px" class="exclamacion">
+                    <p>Solo letras minúsculas y sin acento</p>
+                </div>
+
+                <div class="botones">
+                    <button id="b1" class="b1" onclick="ocultarImagen();" style="color: white">Encriptar</button>
+                    <button class="b2">Desencriptar</button>
+                </div>           
+            </section>
+
+            <section class="clase2">
+                
+                <textarea readonly="section" class="mensaje" cols="20" rows="10"></textarea>
+
+                <div id="resultado">
+                    <div class="imagen-respuesta">
+                        <img src="imagenes/muneco.jpg" alt="muneco">
+                    </div>
+                    <div class="texto">
+                        <div  class="mensaje-no-encontrado">
+                            <p>Ningun mensaje fue encontrado</p>
+                        </div>
+                        <div class="parrafo">
+                            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button id="copiar" class="copiar">Copiar</button>
+                </div>
+
+            </section>
+
+        </main>
+    <footer>
+        <div class="footer">
+            <span>&copy;  Martin Vialardi</span>
+            <a href="https://www.linkedin.com/in/martin-enrique-vialardi-nolasco-45a413258/"><img class="icon_linkedin"
+                    src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="linkedIn"></a>
+            <a href="https://github.com/VIALARDI"><img class="icon_github"
+                    src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub"></a>        
+        </div>
+    </footer>
+    <script src="codigo.js"></script>
+    </body>
+</html>
