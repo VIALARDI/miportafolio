@@ -39,6 +39,7 @@ main{
 
 .Ingresa{
 	border: none;
+	outline: none;
 }
 
 ::placeholder { color: #0A3871; }

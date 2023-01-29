@@ -6,6 +6,14 @@ const BotonDesencriptar = document.querySelector(".b2");
 const BotonCopiar = document.querySelector(".copiar");
 
 
+document.getElementById("botons").addEventListener("click", function() {
+    if (document.getElementById("Ingresa").value.trim() === "") {
+        alert("Por favor escriba algo antes de enviar");
+    } else {
+    }
+});
+
+
 function encriptar (){
 	var mensaje = inputtextarea.value;
 	var mensajeOculto = mensaje
@@ -49,7 +57,7 @@ document.getElementById("b1").addEventListener("click", function(){
 });
 
 
-const lettersRegex = /^[a-z\s]*$/;
+const lettersRegex = /^[a-z\s-ñ]*$/;
 const textarea = document.getElementById("Ingresa");
 textarea.oninput = function() {
   if (!lettersRegex.test(textarea.value)) {
@@ -57,3 +65,4 @@ textarea.oninput = function() {
     alert("solo letras minúsculas y sin acento");
   }
 };
+

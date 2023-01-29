@@ -20,14 +20,14 @@
         <main>
             <section class="clase1">
 
-                <textarea id="Ingresa" class="Ingresa" cols="30" rows="5" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea id="Ingresa" class="Ingresa" cols="30" rows="5" placeholder="Ingrese el texto aqui" onclick="this.placeholder=''"></textarea>
                     
                 <div class="info">
                     <img src="imagenes/exclamation.png" alt="" height="16px" width="16px" class="exclamacion">
                     <p>Solo letras minúsculas y sin acento</p>
                 </div>
 
-                <div class="botones">
+                <div id="botons" class="botones">
                     <button id="b1" class="b1" onclick="ocultarImagen();" style="color: white">Encriptar</button>
                     <button class="b2">Desencriptar</button>
                 </div>           
